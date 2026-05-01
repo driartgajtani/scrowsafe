@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npx ng build --configuration=preview",
   "outputDirectory": "dist/scrowsafe/browser",
   "installCommand": "npm ci",
   "framework": null,

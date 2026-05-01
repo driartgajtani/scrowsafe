@@ -1,8 +1,6 @@
 # Dependencies
 **/node_modules/
 
-# Lock files (auto-generated)
-**/package-lock.json
 
 # Build output
 **/dist/

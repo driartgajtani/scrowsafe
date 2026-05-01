@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#4a42d1"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield icon -->
+  <path d="M560 160 L620 185 V225 C620 261 604 290 560 300 C516 290 500 261 500 225 V185 Z" fill="url(#g)" opacity="0.3"/>
+  <path d="M575 200 L640 230 V280 C640 322 620 358 575 370 C530 358 510 322 510 280 V230 Z" fill="url(#g)"/>
+  <path d="M565 300 L547 282 L554 275 L565 286 L596 255 L603 262 Z" fill="white"/>
+  <!-- Text -->
+  <text x="600" y="430" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="700" fill="white">Scrowsafe</text>
+  <text x="600" y="475" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="22" fill="rgba(255,255,255,0.6)">Secure Social Media Account Transfers</text>
+  <!-- Subtle line -->
+  <rect x="500" y="500" width="200" height="3" rx="2" fill="#6c63ff" opacity="0.5"/>
+</svg>

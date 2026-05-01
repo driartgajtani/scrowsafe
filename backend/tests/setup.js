@@ -1,0 +1,22 @@
+process.env.JWT_SECRET = 'test-jwt-secret';
+process.env.JWT_REFRESH_SECRET = 'test-jwt-refresh-secret';
+process.env.JWT_EXPIRE = '15m';
+process.env.JWT_REFRESH_EXPIRE = '7d';
+process.env.ENCRYPTION_KEY = 'test-32char-encrypt-key-here!!!';
+process.env.STRIPE_SECRET_KEY = 'sk_test_placeholder';
+process.env.STRIPE_WEBHOOK_SECRET = 'whsec_test';
+process.env.STRIPE_ENABLED = 'false';
+process.env.CLIENT_URL = 'http://localhost:4200';
+process.env.REQUIRE_EMAIL_VERIFICATION = 'false';
+process.env.UPLOAD_DIR = 'uploads';
+process.env.MAX_FILE_SIZE = '10485760';
+process.env.MONGO_URI = 'mongodb://localhost:27017/scrowsafe-test';
+process.env.SMTP_HOST = 'smtp.test.com';
+process.env.SMTP_PORT = '587';
+process.env.SMTP_USER = 'test@test.com';
+process.env.SMTP_PASS = 'testpass';
+process.env.FROM_EMAIL = 'Test <test@scrowsafe.com>';
+process.env.NODE_ENV = 'test';
+
+const env = require('../src/config/env');
+if (!env.isResolved) env.resolve();

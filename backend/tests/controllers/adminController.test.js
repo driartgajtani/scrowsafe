@@ -10,8 +10,8 @@ jest.mock('../../src/models/PaymentRecord');
 jest.mock('../../src/models/User');
 jest.mock('../../src/models/Document');
 jest.mock('../../src/utils/encryption', () => ({
-  decrypt: jest.fn((val) => decrypted_${val}),
-  encrypt: jest.fn((val) => encrypted_${val}),
+  decrypt: jest.fn(function (val) { return 'decrypted_' + val; }),
+  encrypt: jest.fn(function (val) { return 'encrypted_' + val; }),
 }));
 jest.mock('stripe', () => {
   const mock = {

@@ -31,7 +31,9 @@ describe('App', () => {
 
   describe('CORS', () => {
     it('should include CORS headers', async () => {
-      const res = await request(app).options('/api/health');
+      const res = await request(app)
+        .options('/api/health')
+        .set('Origin', 'http://localhost:4200');
       expect(res.headers['access-control-allow-origin']).toBeDefined();
     });
   });
